@@ -1,0 +1,21 @@
+# create file
+
+# file = open("S:\\Кружок\\Python\\Ярёменко Леонид", "w")
+# file.write("Hi!")
+# file.close()
+
+with open("S:\\Кружок\\Python\\Ярёменко Леонид\\text.txt", "w") as file:
+    file.write("Hi!")
+
+# read file
+with open("S:\\Кружок\\Python\\Ярёменко Леонид\\text.txt", "r") as file:
+    file1 = file.read()
+print(file1)
+
+# prog
+with open("S:\\Кружок\\Python\\Ярёменко Леонид\\text.txt", "a") as file:
+    while True:
+        word = input('Text: ')
+        file.write(word + "\n")
+        if word == 'end':
+            break
